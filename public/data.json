@@ -1,15 +1,15 @@
 {
   "categories": [
     { "name": "All" },
-    { "name": "Море" },
+    { "name": "Thailand" },
     { "name": "Egypt" },
     { "name": "Turkey" },
-    { "name": "Города" }
+    { "name": "UAE" }
   ],
   "collections": [
     {
       "category": 2,
-      "name": "Egypt- Sharm el Sheikh",
+      "name": "Egypt - Sharm el Sheikh",
       "photos": [
         "img/Egypt/sharm_el_sheikh/sharm-el-sheikh1.jpg",
         "img/Egypt/sharm_el_sheikh/sharm-el-sheikh2.jpg",
@@ -19,12 +19,12 @@
     },
     {
       "category": 1,
-      "name": "Море (июнь)",
+      "name": "Thailand",
       "photos": [
-        "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNlYSUyMGFlc3RoZXRpY3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-        "https://images.unsplash.com/photo-1621335223658-0ebd89004d51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2VhJTIwYWVzdGhldGljfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-        "https://images.unsplash.com/photo-1501436513145-30f24e19fcc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNlYSUyMGFlc3RoZXRpY3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2VhJTIwYWVzdGhldGljfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        "img/thailand/thailand1.jpg",
+        "img/thailand/thailand2.jpg",
+        "img/thailand/thailand3.jpg",
+        "img/thailand/thailand4.jpg"
       ]
     },
     {
@@ -59,17 +59,17 @@
     },
     {
       "category": 4,
-      "name": "Путешествие по миру",
+      "name": "UAE",
       "photos": [
-        "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "https://images.unsplash.com/photo-1560840067-ddcaeb7831d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "https://images.unsplash.com/photo-1531219572328-a0171b4448a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "https://images.unsplash.com/photo-1573108724029-4c46571d6490?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+        "img/uae/united-arab-emirates1.jpg",
+        "img/uae/united-arab-emirates2.jpg",
+        "img/uae/united-arab-emirates3.jpg",
+        "img/uae/united-arab-emirates4.jpg"
       ]
     },
     {
       "category": 2,
-      "name": "Egypt- Нurghada",
+      "name": "Egypt - Нurghada",
       "photos": [
         "img/Egypt/hurghada/hurgada1.jpg",
         "img/Egypt/hurghada/hurgada2.jpg",
