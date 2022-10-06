@@ -2,19 +2,19 @@
   "categories": [
     { "name": "All" },
     { "name": "Море" },
-    { "name": "Горы" },
+    { "name": "Egypt" },
     { "name": "Turkey" },
     { "name": "Города" }
   ],
   "collections": [
     {
       "category": 2,
-      "name": "Поход в горы",
+      "name": "Egypt- Sharm el Sheikh",
       "photos": [
-        "https://images.unsplash.com/photo-1613310023042-ad79320c00ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bmF0aW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-        "https://images.unsplash.com/photo-1612676239016-41e2c92b8e06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW91bmF0aW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-        "https://images.unsplash.com/photo-1610809027249-86c649feacd5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW91bmF0aW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-        "https://images.unsplash.com/photo-1621682372775-533449e550ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bW91bmF0aW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        "img/Egypt/sharm_el_sheikh/sharm-el-sheikh1.jpg",
+        "img/Egypt/sharm_el_sheikh/sharm-el-sheikh2.jpg",
+        "img/Egypt/sharm_el_sheikh/sharm-el-sheikh3.jpg",
+        "img/Egypt/sharm_el_sheikh/sharm-el-sheikh4.jpg"
       ]
     },
     {
@@ -49,12 +49,12 @@
     },
     {
       "category": 3,
-      "name": "Красивые здания",
+      "name": "Turkey - Bodrum",
       "photos": [
-        "https://images.unsplash.com/photo-1616578738046-8d6bbb4ee28e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGFyY2hpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "https://images.unsplash.com/photo-1629774631753-88f827bf6447?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGFyY2hpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "https://images.unsplash.com/photo-1609618486540-8b210e32fe79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fGFyY2hpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "https://images.unsplash.com/photo-1608507777998-7b4f2c269120?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fGFyY2hpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+        "img/turkey/bodrum/bodrum1.jpg",
+        "img/turkey/bodrum/bodrum2.jpg",
+        "img/turkey/bodrum/bodrum3.jpg",
+        "img/turkey/bodrum/bodrum4.jpg"
       ]
     },
     {
