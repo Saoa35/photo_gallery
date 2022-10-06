@@ -1,9 +1,9 @@
 {
   "categories": [
-    { "name": "Все" },
+    { "name": "All" },
     { "name": "Море" },
     { "name": "Горы" },
-    { "name": "Архитектура" },
+    { "name": "Turkey" },
     { "name": "Города" }
   ],
   "collections": [
@@ -29,22 +29,22 @@
     },
     {
       "category": 3,
-      "name": "Поездка в Европу",
+      "name": "Turkey - Marmaris",
       "photos": [
-        "https://images.unsplash.com/photo-1610010252747-afeb906e2d55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXJjaGljdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-        "https://images.unsplash.com/photo-1630335856915-3987afdfdc9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGFyY2hpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "https://images.unsplash.com/photo-1609471374271-0d9b03da0998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGFyY2hpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "https://images.unsplash.com/photo-1613390792897-aa0c06a52332?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGFyY2hpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+        "img/turkey/marmaris/marmaris1.jpg",
+        "img/turkey/marmaris/marmaris2.jpg",
+        "img/turkey/marmaris/marmaris3.jpg",
+        "img/turkey/marmaris/marmaris4.jpg"
       ]
     },
     {
       "category": 3,
-      "name": "Идеальная архитектура",
+      "name": "Turkey - Alanya",
       "photos": [
-        "https://images.unsplash.com/photo-1616578738046-8d6bbb4ee28e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGFyY2hpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "https://images.unsplash.com/photo-1538378918848-29dbc0910082?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YXJjaGljdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-        "https://images.unsplash.com/photo-1614159869126-0f06a742eecb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGFyY2hpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-        "https://images.unsplash.com/photo-1618840739221-e3adb12c9bf1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGFyY2hpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+        "img/turkey/alanya/alanya1.jpg",
+        "img/turkey/alanya/alanya2.jpg",
+        "img/turkey/alanya/alanya3.jpg",
+        "img/turkey/alanya/alanya4.jpg"
       ]
     },
     {
