@@ -9,14 +9,14 @@ function App() {
 
   const [collections, setCollections] = useState([]);
 
-  // useEffect(() => {
-  //   fetch(url)
-  //     .then(res => res.json())
-  //     .then(json => {
-  //       setCollections(json)
-  //     })
-  //     .catch(err => console.log(err.mesage))
-  // })
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((json) => {
+        setCollections(json)
+      })
+      .catch((err) => console.log(err.mesage))
+  }, []);
   
   return (
     <div className="App">
@@ -32,15 +32,12 @@ function App() {
         <input className="search-input" placeholder="Search by name..." />
       </div>
       <div className="content">
-        <Collection
-          name="Travel around the world"
-          images={[
-            "img/all/Thailand.png",
-            "img/all/Egypt.png",
-            "img/all/UAE.png",
-            "img/all/Turkey.png"
-          ]}
-        />
+        {collections.map((obj) => (
+          obj.collections.map((obj2, index) => (
+            <Collection key={index} name={obj2.name} images={obj2.photos} />
+          ))
+ 
+        ))}
       </div>
       <ul className="pagination">
         <li>1</li>
