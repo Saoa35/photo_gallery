@@ -4,6 +4,7 @@ import './index.scss';
 
 
 function Collection({ name, images }) {
+
   return (
     <div className="collection">
       <img className="collection__big" src={images[0]} alt="Item" />
@@ -18,27 +19,33 @@ function Collection({ name, images }) {
 }
 
 function App() {
+  
   return (
     <div className="App">
-      <h1>Моя коллекция фотографий</h1>
+      <h1>Вest holiday resorts</h1>
       <div className="top">
         <ul className="tags">
-          <li className="active">Все</li>
-          <li>Горы</li>
-          <li>Море</li>
-          <li>Архитектура</li>
-          <li>Города</li>
+          <li className="active">All</li>
+          <li>Thailand</li>
+          <li>Egypt</li>
+          <li>Turkey</li>
+          <li>UAE</li>
         </ul>
-        <input className="search-input" placeholder="Поиск по названию" />
+        <input className="search-input" placeholder="Search by name..." />
       </div>
       <div className="content">
         <Collection
           name="Travel around the world"
           images={[
-            "img/all/Thailand.jpg",
-            "img/all/Turkey.jpg",
-            "img/all/UAE.jpg",
-            "img/all/Egypt.jpg"
+            'https://blog.ostrovok.ru/wp-content/uploads/2019/03/samui_3.jpg',
+            "https://www.tripzaza.com/ru/destinations/wp-content/uploads/2017/04/Egypt-1-Giza-Pyramid-e1491277079103.jpg",
+            'https://cdn2.tu-tu.ru/image/pagetree_node_data/1/4c7cf4d23ab2f9a120b208964d00890c/',
+            'https://pic.tu-tu.ru/content4/78465786.jpg'
+
+            // "../img/all/Thailand.png"
+            // "img/all/Egypt.png",
+            // "img/all/UAE.png",
+            // "img/all/Turkey.png"
           ]}
         />
       </div>
