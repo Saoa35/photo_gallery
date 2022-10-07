@@ -1,10 +1,22 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import  { Collection }  from "./Collection.js";
 import './index.scss';
 
+const url = 'https://63405dbbd1fcddf69cb7703e.mockapi.io/photo_gallery/p1/photo-collections';
 
 function App() {
+
+  const [collections, setCollections] = useState([]);
+
+  // useEffect(() => {
+  //   fetch(url)
+  //     .then(res => res.json())
+  //     .then(json => {
+  //       setCollections(json)
+  //     })
+  //     .catch(err => console.log(err.mesage))
+  // })
   
   return (
     <div className="App">
@@ -23,15 +35,10 @@ function App() {
         <Collection
           name="Travel around the world"
           images={[
-            'https://blog.ostrovok.ru/wp-content/uploads/2019/03/samui_3.jpg',
-            "https://www.tripzaza.com/ru/destinations/wp-content/uploads/2017/04/Egypt-1-Giza-Pyramid-e1491277079103.jpg",
-            'https://cdn2.tu-tu.ru/image/pagetree_node_data/1/4c7cf4d23ab2f9a120b208964d00890c/',
-            'https://pic.tu-tu.ru/content4/78465786.jpg'
-
-            // "../img/all/Thailand.png"
-            // "img/all/Egypt.png",
-            // "img/all/UAE.png",
-            // "img/all/Turkey.png"
+            "img/all/Thailand.png",
+            "img/all/Egypt.png",
+            "img/all/UAE.png",
+            "img/all/Turkey.png"
           ]}
         />
       </div>
