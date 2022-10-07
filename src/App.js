@@ -35,7 +35,10 @@ function App() {
         <Collection
           name="Travel around the world"
           images={[
-            ""
+            "img/all/Thailand.jpg",
+            "img/all/Turkey.jpg",
+            "img/all/UAE.jpg",
+            "img/all/Egypt.jpg"
           ]}
         />
       </div>
