@@ -16,6 +16,7 @@ const categs = [
 function App() {
 
   const [categoryId, setCategoryId] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
   const [serchValue, setSerchValue] = useState('');
   const [collections, setCollections] = useState([]);
 
@@ -26,6 +27,7 @@ function App() {
         setCollections(json)
       })
       .catch((err) => console.log(err.mesage))
+      .finally(() => setIsLoading(false))
   }, [categoryId]);
   
   return (
@@ -50,11 +52,13 @@ function App() {
           onChange={(e) => setSerchValue(e.target.value)}/>
       </div>
       <div className="content">
-        {collections
+        {isLoading ? (
+          <h2>Loading...</h2>
+        ) : (collections
             .filter((obj) => obj.name.toLowerCase().includes(serchValue.toLowerCase()))
             .map((obj, index) => (
               <Collection key={index} name={obj.name} images={obj.photos} />
-            )
+            ))
         )}
       </div>
       <ul className="pagination">
