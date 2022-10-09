@@ -3,7 +3,15 @@ import React, { useEffect, useState } from 'react';
 import  { Collection }  from "./Collection.js";
 import './index.scss';
 
-const url = 'https://63405dbbd1fcddf69cb7703e.mockapi.io/photo_gallery/p1/photo-collections';
+const url = 'https://63405dbbd1fcddf69cb7703e.mockapi.io/photo_gallery/p1/photo_collections';
+
+const categs = [
+  { "name": "All" },
+  { "name": "Thailand" },
+  { "name": "Egypt" },
+  { "name": "Turkey" },
+  { "name": "UAE" }
+];
 
 function App() {
 
@@ -12,24 +20,28 @@ function App() {
   const [collections, setCollections] = useState([]);
 
   useEffect(() => {
-    fetch(url)
+    fetch(url + `?${categoryId ? `category=${categoryId}` : ''}`)
       .then((res) => res.json())
       .then((json) => {
         setCollections(json)
       })
       .catch((err) => console.log(err.mesage))
-  }, []);
+  }, [categoryId]);
   
   return (
     <div className="App">
       <h1>Вest holiday resorts</h1>
       <div className="top">
         <ul className="tags">
-          {collections.map(obj => (
-            obj.categories.map(obj2 => (
-              <li key={obj2.name}>{obj2.name}</li>
-            ))
-          ))}
+          {categs.map((obj, index) => (
+              <li 
+                onClick={() => setCategoryId(index)}
+                className={categoryId === index ? 'active' : ''} 
+                key={obj.name}>
+                {obj.name}
+              </li>
+          )
+          )}
         </ul>
         <input 
           className="search-input" 
@@ -38,13 +50,12 @@ function App() {
           onChange={(e) => setSerchValue(e.target.value)}/>
       </div>
       <div className="content">
-        {collections.map((obj) => (
-            obj.collections
+        {collections
             .filter((obj) => obj.name.toLowerCase().includes(serchValue.toLowerCase()))
-            .map((obj2, index) => (
-              <Collection key={index} name={obj2.name} images={obj2.photos} />
-            ))
-        ))}
+            .map((obj, index) => (
+              <Collection key={index} name={obj.name} images={obj.photos} />
+            )
+        )}
       </div>
       <ul className="pagination">
         <li>1</li>
