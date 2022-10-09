@@ -7,6 +7,7 @@ const url = 'https://63405dbbd1fcddf69cb7703e.mockapi.io/photo_gallery/p1/photo-
 
 function App() {
 
+  const [categoryId, setCategoryId] = useState(0);
   const [serchValue, setSerchValue] = useState('');
   const [collections, setCollections] = useState([]);
 
@@ -24,11 +25,11 @@ function App() {
       <h1>Вest holiday resorts</h1>
       <div className="top">
         <ul className="tags">
-          <li className="active">All</li>
-          <li>Thailand</li>
-          <li>Egypt</li>
-          <li>Turkey</li>
-          <li>UAE</li>
+          {collections.map(obj => (
+            obj.categories.map(obj2 => (
+              <li key={obj2.name}>{obj2.name}</li>
+            ))
+          ))}
         </ul>
         <input 
           className="search-input" 
@@ -37,13 +38,12 @@ function App() {
           onChange={(e) => setSerchValue(e.target.value)}/>
       </div>
       <div className="content">
-        {collections.filter((obj) => {
-          return obj.name.toLowerCase().includes(serchValue.toLowerCase())
-        }).map((obj) => (
-          obj.collections.map((obj2, index) => (
-            <Collection key={index} name={obj2.name} images={obj2.photos} />
-          ))
- 
+        {collections.map((obj) => (
+            obj.collections
+            .filter((obj) => obj.name.toLowerCase().includes(serchValue.toLowerCase()))
+            .map((obj2, index) => (
+              <Collection key={index} name={obj2.name} images={obj2.photos} />
+            ))
         ))}
       </div>
       <ul className="pagination">
