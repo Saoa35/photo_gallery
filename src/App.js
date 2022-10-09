@@ -17,20 +17,23 @@ function App() {
 
   const [categoryId, setCategoryId] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState(1);
   const [serchValue, setSerchValue] = useState('');
   const [collections, setCollections] = useState([]);
 
   useEffect(() => {
     setIsLoading(true);
-    fetch(url + `?${categoryId ? `category=${categoryId}` : ''}`)
+    const category = `${categoryId ? `category=${categoryId}` : ''}`;
+    const pageItem = `?page=${page}&limit=3&`;
+
+    fetch(url + pageItem + category)
       .then((res) => res.json())
       .then((json) => {
         setCollections(json)
       })
       .catch((err) => console.log(err.mesage))
       .finally(() => setIsLoading(false))
-  }, [categoryId]);
+  }, [categoryId, page]);
   
   return (
     <div className="App">
@@ -64,8 +67,8 @@ function App() {
         )}
       </div>
       <ul className="pagination">
-        {[...Array(5)].map((_, index) => (
-          <li onClick={() => setPage(index)} className={page === index ? 'active' : ''} key={index}>{index + 1}</li>
+        {[...Array(3)].map((_, index) => (
+          <li onClick={() => setPage(index + 1)} className={page === index + 1 ? 'active' : ''} key={index}>{index + 1}</li>
         ))}
       </ul>
     </div>
