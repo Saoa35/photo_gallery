@@ -30,7 +30,11 @@ function App() {
           <li>Turkey</li>
           <li>UAE</li>
         </ul>
-        <input className="search-input" placeholder="Search by name..." />
+        <input 
+          className="search-input" 
+          placeholder="Search by name..."
+          value={serchValue}
+          onChange={(e) => setSerchValue(e.target.value)}/>
       </div>
       <div className="content">
         {collections.map((obj) => (
