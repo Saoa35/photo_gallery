@@ -17,10 +17,12 @@ function App() {
 
   const [categoryId, setCategoryId] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+  const [page, setPage] = useState(0);
   const [serchValue, setSerchValue] = useState('');
   const [collections, setCollections] = useState([]);
 
   useEffect(() => {
+    setIsLoading(true);
     fetch(url + `?${categoryId ? `category=${categoryId}` : ''}`)
       .then((res) => res.json())
       .then((json) => {
