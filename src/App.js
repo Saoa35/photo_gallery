@@ -7,6 +7,7 @@ const url = 'https://63405dbbd1fcddf69cb7703e.mockapi.io/photo_gallery/p1/photo-
 
 function App() {
 
+  const [serchValue, setSerchValue] = useState('');
   const [collections, setCollections] = useState([]);
 
   useEffect(() => {
