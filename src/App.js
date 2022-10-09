@@ -37,7 +37,9 @@ function App() {
           onChange={(e) => setSerchValue(e.target.value)}/>
       </div>
       <div className="content">
-        {collections.map((obj) => (
+        {collections.filter((obj) => {
+          return obj.name.toLowerCase().includes(serchValue.toLowerCase())
+        }).map((obj) => (
           obj.collections.map((obj2, index) => (
             <Collection key={index} name={obj2.name} images={obj2.photos} />
           ))
