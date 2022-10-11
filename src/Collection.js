@@ -8,7 +8,7 @@ export function Collection({ name, images }) {
 
     return (
       <div className="collection">      
-        <img className={"collection__big"} src={ isActive[0]  } alt="Item" />    
+        <img className={"collection__big"} src={ isActive[0]  } alt="Item" onClick={() => setOpen()} />    
         <div className="collection__bottom">
           <img 
             onClick={() => setIsActive([images[0], images[1]] = [images[1], images[0]])} 
