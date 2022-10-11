@@ -1,8 +1,8 @@
 import React from 'react';
 
-export function Modal = (({ open, setOpen, children }) => {
+export function Modal({ open, setOpen, children }) {
   return(
-    <div className='overlay'>
+    <div className={`overlay animated ${open ? 'show' : ''}`}>
       <div className='modal'>
         <svg onClick={() => setOpen(false)} height="200" viewBox="0 0 200 200" width="200">
           <title />
@@ -12,4 +12,4 @@ export function Modal = (({ open, setOpen, children }) => {
       </div>
   </div>
   )
-})
+}
