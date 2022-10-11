@@ -12,15 +12,16 @@ export function Collection({ name, images }) {
           <img 
             onClick={() => setIsActive(true)} 
             className={"collection__mini"} 
-            src={isActive ? images[0] = [images[1], images[1] = images[0]][0] : images[1]} 
+            src={isActive ? [images[0], images[1]] = [images[1], images[0]] : images[1]} 
+            alt="Item"/>
+          <img  
+            onClick={() => setIsActive(true)}
+            className={"collection__mini"} 
+            src={isActive ? [images[0], images[2]] = [images[2], images[0]] : images[2]} 
             alt="Item"/>
           <img  
             className={"collection__mini"} 
-            src={isActive ? images[0] = [images[2], images[2] = images[0]][1] : images[2]} 
-            alt="Item"/>
-          <img  
-            className={"collection__mini"} 
-            src={isActive ? images[0] = [images[3], images[3] = images[0]][2] : images[3]} 
+            src={images[3]} 
             alt="Item" />
         </div>
         <h4>{name}</h4>
