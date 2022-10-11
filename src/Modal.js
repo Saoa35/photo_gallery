@@ -1,7 +1,11 @@
 import React from 'react';
 
-export function Modal = (({  }) => (
+export function Modal = (({ open, setOpen, children }) => {
+  return(
     <div className='overlay'>
-
-    </div>
-))
+      <div className='modal'>
+        {children}
+      </div>
+  </div>
+  )
+})
