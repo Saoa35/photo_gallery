@@ -1,23 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 
 export function Collection({ name, images }) {
 
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(null);
 
     return (
       <div className="collection">      
         <img className={"collection__big"} src={ images[0]  } alt="Item" />    
         <div className="collection__bottom">
           <img 
-            onClick={() => setIsActive(true)} 
+            onClick={(e) => setIsActive(e.target)} 
             className={"collection__mini"} 
             src={isActive ? [images[0], images[1]] = [images[1], images[0]] : images[1]} 
             alt="Item"/>
           <img  
             onClick={() => setIsActive(true)}
             className={"collection__mini"} 
-            src={isActive ? [images[0], images[2]] = [images[2], images[0]] : images[2]} 
+            src={images[2]} 
             alt="Item"/>
           <img  
             className={"collection__mini"} 
