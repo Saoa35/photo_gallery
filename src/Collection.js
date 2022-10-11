@@ -4,23 +4,24 @@ import React, { useState } from 'react';
 export function Collection({ name, images }) {
 
   const [isActive, setIsActive] = useState(images);
+  const [open, setOpen] = useState(false);
 
     return (
       <div className="collection">      
         <img className={"collection__big"} src={ isActive[0]  } alt="Item" />    
         <div className="collection__bottom">
           <img 
-            onClick={() => setIsActive([isActive[0], isActive[1]] = [isActive[1], isActive[0]])} 
+            onClick={() => setIsActive([images[0], images[1]] = [images[1], images[0]])} 
             className={"collection__mini"} 
             src={images[1]} 
             alt="Item"/>
           <img  
-             onClick={() => setIsActive([isActive[0], isActive[2]] = [isActive[2], isActive[0]])}
+             onClick={() => setIsActive([images[0], images[2]] = [images[2], images[0]])}
             className={"collection__mini"} 
             src={images[2]} 
             alt="Item"/>
           <img 
-            onClick={() => setIsActive([isActive[0], isActive[3]] = [isActive[3], isActive[0]])} 
+            onClick={() => setIsActive([images[0], images[3]] = [images[3], images[0]])} 
             className={"collection__mini"} 
             src={images[3]} 
             alt="Item" />
