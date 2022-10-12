@@ -17,6 +17,7 @@ body {
   padding: 50px;
   width: 100%;
   max-width: 1200px;
+  text-align: center;
 }
 
 h1 {
@@ -52,7 +53,7 @@ h1 {
 
 .content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   margin-top: 40px;
@@ -170,9 +171,13 @@ h1 {
 
 .modal {
   background-color: #fff;
-  width: 70%;
-  max-width: 500px;
-  max-height: 300px;
+  // width: 70%;
+  // max-width: 500px;
+  // max-height: 300px;
+
+  width: 900px;
+  height: 600px;
+  
   padding: 40px 30px;
   border-radius: 10px;
   position: absolute;
