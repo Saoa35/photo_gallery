@@ -54,7 +54,6 @@ h1 {
 .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  // grid-template-columns: 1fr, 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   margin-top: 40px;
@@ -95,6 +94,12 @@ h1 {
 
   img {
     object-fit: cover;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.15s ease-in-out;
+    &:hover {
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+    }
   }
 
   &__big {

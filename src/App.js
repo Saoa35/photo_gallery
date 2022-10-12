@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     setIsLoading(true);
     const category = `${categoryId ? `category=${categoryId}` : ''}`;
-    const pageItem = `?page=${page}&limit=2&`;
+    const pageItem = `?page=${page}&limit=4&`;
 
     fetch(url + pageItem + category)
       .then((res) => res.json())
@@ -67,7 +67,7 @@ function App() {
         )}
       </div>
       <ul className="pagination">
-        {[...Array(4)].map((_, index) => (
+        {[...Array(2)].map((_, index) => (
           <li onClick={() => setPage(index + 1)} className={page === index + 1 ? 'active' : ''} key={index}>{index + 1}</li>
         ))}
       </ul>
