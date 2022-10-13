@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import  ReactDOM  from 'react-dom';
 
 
@@ -11,7 +11,16 @@ const modal = document.getElementById('modal');
   )
 }
 
+export function Parent() {
 
+  const [open, setOpen] = useState(false);
+
+  return(
+    <div>
+      
+    </div>
+  )
+}
 
 
 
