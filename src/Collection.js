@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
-import { Modal } from './Modal';
+// import { Modal } from './Modal';
 
 
 export function Collection({ name, images }) {
 
   const [isActive, setIsActive] = useState(images);
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
 
     return (
       <div className="collection">      
-        <img className="collection__big" src={ isActive[0]  } alt="Item"  onClick={() => setOpen(true)}/> 
-        <Modal open={open} setOpen={setOpen}>
+        <img className="collection__big" src={ isActive[0]  } alt="Item"  /> 
+        {/* onClick={() => setOpen(true)} */}
+        {/* <Modal open={open} setOpen={setOpen}>
           <img src={ isActive[0] } alt="Item"  />
-        </Modal>
+        </Modal> */}
         <div className="collection__bottom">
           <img 
             onClick={() => setIsActive([images[0], images[1]] = [images[1], images[0]])} 
