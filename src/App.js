@@ -65,6 +65,7 @@ function App() {
               <Collection key={index} name={obj.name} images={obj.photos} />
             ))
         )}
+         
       </div>
       <ul className="pagination">
         {[...Array(2)].map((_, index) => (

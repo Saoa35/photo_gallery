@@ -175,42 +175,44 @@ h1 {
 //   transition: all 0.5s ease-in-out;
 // }
 
-// .modal {
-//   background-color: #fff;
+.modal {
+  background-color: #fff;
   // width: 70%;
   // max-width: 500px;
   // max-height: 300px;
 
-//   width: 900px;
-//   height: 600px;
+  border: 2px solid black;
+
+  width: 500px;
+  height: 300px;
   
-//   padding: 40px 30px;
-//   border-radius: 10px;
-//   position: absolute;
-//   left: 50%;
-//   top: 50%;
-//   transform: translate(-50%, -50%);
-//   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-//   transition: all 0.5s ease-in-out;
+  padding: 40px 30px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
 
 //   img {
 //     border-radius: 5px;
 //     width: 100%;
-//   }
+  }
 
-//   svg {
-//     position: absolute;
-//     right: 10px;
-//     top: 10px;
-//     height: 24px;
-//     width: 24px;
-//     opacity: 0.3;
-//     cursor: pointer;
+  svg {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 24px;
+    width: 24px;
+    opacity: 0.3;
+    cursor: pointer;
 
-//     &:hover {
-//       opacity: 1;
-//     }
-//   }
+    // &:hover {
+    //   opacity: 1;
+    // }
+  }
 // }
 
 // .overlay.animated {
