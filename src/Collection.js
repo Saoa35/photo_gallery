@@ -9,7 +9,7 @@ export function Collection({ name, images }) {
 
     return (
       <div className="collection">      
-        <img className="collection__big" src={ isActive[0]  } alt="Item"  /> 
+        <img className="collection__big" src={ isActive[0]  } alt="Item" onClick={() => setOpen(true)} /> 
         {/* onClick={() => setOpen(true)} */}
         {/* <Modal open={open} setOpen={setOpen}>
           <img src={ isActive[0] } alt="Item"  />
