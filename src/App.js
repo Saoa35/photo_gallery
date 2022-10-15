@@ -1,7 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
 import  { Collection }  from "./Collection.js";
-// import { Modal } from './Modal';
 import './index.scss';
 
 const url = 'https://63405dbbd1fcddf69cb7703e.mockapi.io/photo_gallery/p1/photo_collections';
@@ -60,6 +59,7 @@ function App() {
           onChange={(e) => setSerchValue(e.target.value)}/>
       </div>
       <div className="content">
+        
         {isLoading ? (
           <h2>Loading...</h2>
         ) : (collections
