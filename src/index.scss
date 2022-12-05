@@ -165,16 +165,16 @@ h1 {
   }
 }
 
-.modal {
-    background-color: #fff;
-    width: 700px;
-    height: 500px;
-    border: 2px solid black;
-    border-radius: 10px;
-    position:absolute;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
-    top: 5px;
-    left:-50px;
-    right: 200px;
+// .modal {
+//     background-color: #fff;
+//     width: 700px;
+//     height: 500px;
+//     border: 2px solid black;
+//     border-radius: 10px;
+//     position:absolute;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+//     top: 5px;
+//     left:-50px;
+//     right: 200px;
     // transform: translate(-50%, -50%);
     // box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     // transition: all 0.5s ease-in-out;
@@ -185,20 +185,20 @@ h1 {
       // height: 100%;
     // }
   
-    svg {
-      position: absolute;
-      right: 10px;
-      top: 10px;
-      height: 24px;
-      width: 24px;
-      opacity: 0.3;
-      cursor: pointer;
+  //   svg {
+  //     position: absolute;
+  //     right: 10px;
+  //     top: 10px;
+  //     height: 24px;
+  //     width: 24px;
+  //     opacity: 0.3;
+  //     cursor: pointer;
   
-      &:hover {
-        opacity: 1;
-      }
-    }
-  }
+  //     &:hover {
+  //       opacity: 1;
+  //     }
+  //   }
+  // }
 
 
 // .overlay {
