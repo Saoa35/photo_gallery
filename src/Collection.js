@@ -27,9 +27,7 @@ export function Collection({ name, images }) {
 
       <div className="collection__bottom">
         <img
-          onClick={() =>
-            setIsActive(([images[0], images[1]] = [images[1], images[0]]))
-          }
+          onClick={() => setIsActive(replaceImage(images, 1))}
           className={"collection__mini"}
           src={images[1]}
           alt="Item"
