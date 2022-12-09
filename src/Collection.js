@@ -6,7 +6,7 @@ export function Collection({ name, images }) {
   const [open, setOpen] = useState(false);
   const [openModal, setOpenModal] = useState(false);
 
-  const imageReplace = (img, num) => {
+  const replaceImage = (img, num) => {
     [img[0], img[num]] = [img[num], img[0]];
   };
 
