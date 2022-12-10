@@ -7,7 +7,7 @@ export function Collection({ name, images }) {
   const [openModal, setOpenModal] = useState(false);
 
   const replaceImage = (img, num) => {
-    [img[0], img[num]] = [img[num], img[0]];
+    return ([img[0], img[num]] = [img[num], img[0]]);
   };
 
   return (
@@ -33,17 +33,13 @@ export function Collection({ name, images }) {
           alt="Item"
         />
         <img
-          onClick={() =>
-            setIsActive(([images[0], images[2]] = [images[2], images[0]]))
-          }
+          onClick={() => setIsActive(replaceImage(images, 2))}
           className={"collection__mini"}
           src={images[2]}
           alt="Item"
         />
         <img
-          onClick={() =>
-            setIsActive(([images[0], images[3]] = [images[3], images[0]]))
-          }
+          onClick={() => setIsActive(replaceImage(images, 3))}
           className={"collection__mini"}
           src={images[3]}
           alt="Item"
