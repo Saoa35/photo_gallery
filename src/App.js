@@ -19,7 +19,7 @@ function App() {
   const [page, setPage] = useState(1);
   const [serchValue, setSerchValue] = useState("");
   const [collections, setCollections] = useState([]);
-  const [openModal, setOpenModal] = useState(false);
+  const [openModal, setOpenModal] = useState(true);
 
   // const [open, setOpen] = useState(false);
 
@@ -60,7 +60,7 @@ function App() {
         />
       </div>
       <div className="content">
-        {/* {openModal && <Modal />} */}
+        {openModal && <Modal />}
         {isLoading ? (
           <h2>Loading...</h2>
         ) : (
