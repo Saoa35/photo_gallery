@@ -19,9 +19,7 @@ function App() {
   const [page, setPage] = useState(1);
   const [serchValue, setSerchValue] = useState("");
   const [collections, setCollections] = useState([]);
-  const [openModal, setOpenModal] = useState(true);
-
-  // const [open, setOpen] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     setIsLoading(true);
@@ -60,7 +58,7 @@ function App() {
         />
       </div>
       <div className="content">
-        {openModal && <Modal />}
+        {/* {openModal && <Modal setOpenModal={setOpenModal} />} */}
         {isLoading ? (
           <h2>Loading...</h2>
         ) : (
@@ -68,9 +66,32 @@ function App() {
             .filter((obj) =>
               obj.name.toLowerCase().includes(serchValue.toLowerCase())
             )
-            .map((obj, index) => (
-              <Collection key={index} name={obj.name} images={obj.photos} />
-            ))
+
+            .map((obj, index) =>
+              openModal ? (
+                <Modal
+                  setOpenModal={setOpenModal}
+                  images={obj.photos}
+                  key={index}
+                />
+              ) : (
+                <Collection
+                  key={index}
+                  name={obj.name}
+                  images={obj.photos}
+                  setOpenModal={setOpenModal}
+                />
+              )
+            )
+
+          // .map((obj, index) => (
+          //   <Collection
+          //     key={index}
+          //     name={obj.name}
+          //     images={obj.photos}
+          //     setOpenModal={setOpenModal}
+          //   />
+          // ))
         )}
       </div>
       <ul className="pagination">
