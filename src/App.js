@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Collection } from "./Collection.js";
 import "./index.scss";
+import { Modal } from "./Modal.js";
 
 const url = "https://6394e9204df9248eadafaaf8.mockapi.io/collections";
 
@@ -18,6 +19,7 @@ function App() {
   const [page, setPage] = useState(1);
   const [serchValue, setSerchValue] = useState("");
   const [collections, setCollections] = useState([]);
+  const [openModal, setOpenModal] = useState(false);
 
   // const [open, setOpen] = useState(false);
 
@@ -58,6 +60,7 @@ function App() {
         />
       </div>
       <div className="content">
+        {/* {openModal && <Modal />} */}
         {isLoading ? (
           <h2>Loading...</h2>
         ) : (
