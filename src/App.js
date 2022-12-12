@@ -71,7 +71,8 @@ function App() {
               openModal ? (
                 <Modal
                   setOpenModal={setOpenModal}
-                  images={obj.photos}
+                  openModal={openModal}
+                  // images={obj.photos}
                   key={index}
                 />
               ) : (
