@@ -1,7 +1,7 @@
 import React from "react";
 
-export function Modal({ setOpenModal, images }) {
-  // console.log(images);
+export function Modal({ setOpenModal, image }) {
+  // console.log(image);
   return (
     <div className={`overlay `}>
       <div className="modal">
@@ -16,13 +16,8 @@ export function Modal({ setOpenModal, images }) {
         </svg>
 
         <div className="image">
-          {/* {images.map((el) => (
-            <img
-              className="collection__big"
-              src={el[0]}
-              alt="Item"
-            />
-          ))} */}
+          {/* {image} */}
+          {/* <img className="collection__big" src={image} alt="Item" /> */}
         </div>
 
         {/* <div className="image">{images[0]}</div> */}

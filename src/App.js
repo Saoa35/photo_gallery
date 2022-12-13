@@ -35,6 +35,10 @@ function App() {
       .finally(() => setIsLoading(false));
   }, [categoryId, page]);
 
+  const onAddToModal = (e) => {
+    console.log(e);
+  };
+
   return (
     <div className="App">
       <h1>Вest holiday resorts</h1>
@@ -81,6 +85,7 @@ function App() {
                   name={obj.name}
                   images={obj.photos}
                   setOpenModal={setOpenModal}
+                  bigImg={onAddToModal}
                 />
               )
             )

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Modal } from "./Modal";
 
-export function Collection({ name, images, setOpenModal, openModal }) {
+export function Collection({ name, images, setOpenModal, openModal, bigImg }) {
   const [isActive, setIsActive] = useState(images);
 
   const replaceImage = (img, num) => {
@@ -9,6 +9,11 @@ export function Collection({ name, images, setOpenModal, openModal }) {
   };
 
   const arr = [1, 2, 3];
+
+  const onClickBigImg = () => {
+    bigImg({ images });
+    setOpenModal(true);
+  };
 
   // console.log([images[0]]);
 
@@ -19,9 +24,16 @@ export function Collection({ name, images, setOpenModal, openModal }) {
         src={isActive[0]}
         alt="Item"
         // onClick={() => setOpenModal(true)}
-        onClick={() => {
-          setOpenModal(true) && <Modal images={images} />;
-        }}
+        onClick={
+          onClickBigImg
+
+          // setOpenModal(true);
+
+          // const currImg = picture.target.src;
+          // console.log(currImg.substring(22));
+          // const imgSrc = currImg.substring(22);
+          // <Modal image={picture.target.src} />;
+        }
       />
       {/* {openModal ? <Modal>{images[0]}</Modal>} */}
       <div className="collection__bottom">
