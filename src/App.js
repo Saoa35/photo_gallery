@@ -85,7 +85,7 @@ function App() {
                   name={obj.name}
                   images={obj.photos}
                   setOpenModal={setOpenModal}
-                  bigImg={onAddToModal}
+                  bigImg={(e) => onAddToModal(e)}
                 />
               )
             )
