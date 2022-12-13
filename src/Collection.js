@@ -10,7 +10,7 @@ export function Collection({ name, images, setOpenModal, openModal }) {
 
   const arr = [1, 2, 3];
 
-  // console.log(images[0]);
+  // console.log([images[0]]);
 
   return (
     <div className="collection">
@@ -20,7 +20,7 @@ export function Collection({ name, images, setOpenModal, openModal }) {
         alt="Item"
         // onClick={() => setOpenModal(true)}
         onClick={() => {
-          setOpenModal(true) && <Modal images={isActive} />;
+          setOpenModal(true) && <Modal images={images} />;
         }}
       />
       {/* {openModal ? <Modal>{images[0]}</Modal>} */}

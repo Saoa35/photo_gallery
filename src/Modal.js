@@ -16,13 +16,13 @@ export function Modal({ setOpenModal, images }) {
         </svg>
 
         <div className="image">
-          {images.map((el) => (
+          {/* {images.map((el) => (
             <img
-              // className="collection__big"
+              className="collection__big"
               src={el[0]}
               alt="Item"
             />
-          ))}
+          ))} */}
         </div>
 
         {/* <div className="image">{images[0]}</div> */}
