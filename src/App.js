@@ -21,6 +21,8 @@ function App() {
   const [collections, setCollections] = useState([]);
   const [openModal, setOpenModal] = useState(false);
 
+  const [modalImg, setModalImg] = useState([]);
+
   useEffect(() => {
     setIsLoading(true);
     const category = `${categoryId ? `category=${categoryId}` : ""}`;
@@ -36,8 +38,10 @@ function App() {
   }, [categoryId, page]);
 
   const onAddToModal = (e) => {
-    console.log(e);
+    // setModalImg([...modalImg, e]);
+    setModalImg([...modalImg, e]);
   };
+  // console.log(modalImg[0]);
 
   return (
     <div className="App">
