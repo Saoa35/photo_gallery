@@ -21,7 +21,7 @@ function App() {
   const [collections, setCollections] = useState([]);
   const [openModal, setOpenModal] = useState(false);
 
-  const [modalImg, setModalImg] = useState([]);
+  // const [modalImg, setModalImg] = useState([]);
 
   useEffect(() => {
     setIsLoading(true);
@@ -37,10 +37,9 @@ function App() {
       .finally(() => setIsLoading(false));
   }, [categoryId, page]);
 
-  const onAddToModal = (e) => {
-    // setModalImg([...modalImg, e]);
-    setModalImg([...modalImg, e]);
-  };
+  // const onAddToModal = (e) => {
+  //   setModalImg([...modalImg, e]);
+  // };
   // console.log(modalImg[0]);
 
   return (
@@ -66,7 +65,6 @@ function App() {
         />
       </div>
       <div className="content">
-        {/* {openModal && <Modal setOpenModal={setOpenModal} />} */}
         {isLoading ? (
           <h2>Loading...</h2>
         ) : (
@@ -75,24 +73,23 @@ function App() {
               obj.name.toLowerCase().includes(serchValue.toLowerCase())
             )
 
-            .map((obj, index) =>
-              openModal ? (
-                <Modal
-                  setOpenModal={setOpenModal}
-                  openModal={openModal}
-                  // images={obj.photos}
-                  key={index}
-                />
-              ) : (
-                <Collection
-                  key={index}
-                  name={obj.name}
-                  images={obj.photos}
-                  setOpenModal={setOpenModal}
-                  bigImg={(e) => onAddToModal(e)}
-                />
-              )
-            )
+            .map((obj, index) => (
+              // openModal ? (
+              //   <Modal
+              //     setOpenModal={setOpenModal}
+              //     openModal={openModal}
+              //     images={obj.photos}
+              //     key={index}
+              //   />
+              // ) : (
+              <Collection
+                key={index}
+                name={obj.name}
+                images={obj.photos}
+                setOpenModal={setOpenModal}
+                // bigImg={(e) => onAddToModal(e)}
+              />
+            ))
 
           // .map((obj, index) => (
           //   <Collection
@@ -103,6 +100,7 @@ function App() {
           //   />
           // ))
         )}
+        {openModal && <Modal setOpenModal={setOpenModal} />}
       </div>
       <ul className="pagination">
         {[...Array(2)].map((_, index) => (

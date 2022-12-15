@@ -10,12 +10,14 @@ export function Collection({ name, images, setOpenModal, openModal, bigImg }) {
 
   const arr = [1, 2, 3];
 
-  const onClickBigImg = () => {
-    bigImg({ images });
+  const onClickBigImg = (e) => {
+    // bigImg = e.target.src;
     setOpenModal(true);
+    console.log(e.target.src);
+    <Modal src={e.target.src} />;
   };
 
-  // console.log([images[0]]);
+  // console.log(bigImg);
 
   return (
     <div className="collection">
