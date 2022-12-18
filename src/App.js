@@ -19,9 +19,7 @@ function App() {
   const [page, setPage] = useState(1);
   const [serchValue, setSerchValue] = useState("");
   const [collections, setCollections] = useState([]);
-  const [openModal, setOpenModal] = useState(false);
-
-  // const [modalImg, setModalImg] = useState([]);
+  const [modalData, setModalData] = useState({ isOpen: false, img: "" });
 
   useEffect(() => {
     setIsLoading(true);
@@ -36,11 +34,6 @@ function App() {
       .catch((err) => console.log(err.mesage))
       .finally(() => setIsLoading(false));
   }, [categoryId, page]);
-
-  // const onAddToModal = (e) => {
-  //   setModalImg([...modalImg, e]);
-  // };
-  // console.log(modalImg[0]);
 
   return (
     <div className="App">
@@ -74,34 +67,20 @@ function App() {
             )
 
             .map((obj, index) => (
-              // openModal ? (
-              //   <Modal
-              //     setOpenModal={setOpenModal}
-              //     openModal={openModal}
-              //     images={obj.photos}
-              //     key={index}
-              //   />
-              // ) : (
               <Collection
                 key={index}
                 name={obj.name}
                 images={obj.photos}
-                setOpenModal={setOpenModal}
-                // bigImg={(e) => onAddToModal(e)}
+                setModalData={setModalData}
               />
             ))
-
-          // .map((obj, index) => (
-          //   <Collection
-          //     key={index}
-          //     name={obj.name}
-          //     images={obj.photos}
-          //     setOpenModal={setOpenModal}
-          //   />
-          // ))
         )}
-        {openModal && <Modal setOpenModal={setOpenModal} />}
       </div>
+
+      {modalData.isOpen && (
+        <Modal setModalData={setModalData} image={modalData.img} />
+      )}
+
       <ul className="pagination">
         {[...Array(2)].map((_, index) => (
           <li

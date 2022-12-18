@@ -1,17 +1,11 @@
 import React from "react";
 
-export function Modal({ setOpenModal, src }) {
-  console.log(src);
-
-  // const onClickImg = (e) => {
-  //   images
-  // }
-
+export function Modal({ setModalData, image }) {
   return (
     <div className={`overlay `}>
       <div className="modal">
         <svg
-          onClick={() => setOpenModal(false)}
+          onClick={() => setModalData({ isOpen: false })}
           height="200"
           viewBox="0 0 200 200"
           width="200"
@@ -21,12 +15,8 @@ export function Modal({ setOpenModal, src }) {
         </svg>
 
         <div className="image">
-          {/* {pict} */}
-          {/* <img className="collection__big" src={image} alt="Item" /> */}
+          <img className="collection__big" src={image} alt="Item" />
         </div>
-
-        {/* <div className="image">{images[0]}</div> */}
-        {/* {children} */}
       </div>
     </div>
   );
