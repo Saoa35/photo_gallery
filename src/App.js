@@ -3,7 +3,7 @@ import { Collection } from "./Collection.js";
 import "./index.scss";
 import { Modal } from "./Modal.js";
 
-const url = "https://6394e9204df9248eadafaaf8.mockapi.io/collections";
+const url = "https://6463a95c127ad0b8f88e11ea.mockapi.io/collections";
 
 const categs = [
   { name: "All" },
