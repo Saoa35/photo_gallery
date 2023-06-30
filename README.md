@@ -1,4 +1,4 @@
-Photo gallery website. You can select a photo and open it in a modal window in a larger size. Stack: HTML, SCSS, ReactJS, React Hooks, Pagination
+Photo gallery website. You can select a photo and open it in a modal window in a larger size, also implemented searching and sorting by resort names. Stack: HTML, SCSS, ReactJS, React Hooks, Pagination
 
 ![bhr_1](https://user-images.githubusercontent.com/78507597/208294852-bbcc7e4b-caaf-43f5-ac06-f10c32584584.png)
 
