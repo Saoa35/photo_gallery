@@ -1,4 +1,4 @@
-Photo gallery website. You can select a photo and open it in a modal window in a larger size, also implemented searching and sorting by resort names. It was created by using: HTML, SCSS, ReactJS, React Hooks, Pagination. Link to open site => 
+Photo gallery website. You can select a photo and open it in a modal window in a larger size, also implemented searching and sorting by resort names. It was created by using: HTML, SCSS, ReactJS, React Hooks, Pagination. Link to open site => https://photo-gallery-saoa35.vercel.app/
 
 ![bhr_1](https://user-images.githubusercontent.com/78507597/208294852-bbcc7e4b-caaf-43f5-ac06-f10c32584584.png)
 
